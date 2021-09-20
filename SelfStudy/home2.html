@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <link
+            rel="shortcut icon"
+            sizes="16x32 64x64"
+            href="https://nomadcoders.co/m.png"
+        />
+        <title>Home - My first Website</title>
+        <meta charset="utf-8"/>
+        [meta charset="utf-8"/]는 반드시 넣어주자. 브라우저가 어떻게 읽어라라고 알려주는 것.<br>
+        <meta name="description" content="This is my Website">
+
+        [meta]는 두개의 어트리뷰트를 갖고 있다. 컨텐트와 네임.<br>
+    </head>
+    <body>
+        <form>
+            
+            <input type="color"/><br>
+
+            <label for="first-name">First Name</label>
+            <input id="first-name"required placeholder="Name" type="text"/><br>
+            
+            <input placeholder="LastName" disabled type="text"/><br>
+            <input required placeholder="Username" type="text"/><br>
+            <input required placeholder="Password" minlength="10" type="password"/><br>
+            <input type="Submit" value="Create Account"/><br>
+
+            <label for="profile"></label> Profile photo</label><br>
+            <input id="profile" type="file" accept=".png, .pdf"/><br>
+            [label]은 input과 함께 사용되어야 한다. for 어트리뷰트 사용, 위 예시 참고<br>
+
+
+            <label for="website">Web site</label>
+            <input id="websiste" required placeholder="Name" type="url" />
+        </form>
+    </body>
+</html>
