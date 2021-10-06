@@ -48,3 +48,17 @@ ul : Unordered List, 정렬되지 않은 목록(불릿 기호 등)
 #### 5-3 [span]  
 구문 콘텐츠를 위한 통용 "인라인" 컨테이너(공간)로 아무것도 나타내지 않지만, 어떤 특성의 값을 공유하는 요소를 묶을때 사용할 수 있다.
 
+### (6) 양식  
+여러 입력가능한 요소. 사용자가 내용을 채우고 웹 및 어플리케이션에 제출할 수 있게 된다.  
+#### 6-1 [button]  
+클릭 가능한 버튼  
+#### 6-2 [datalist]  
+선택 가능한 또는 추천하는 선택지의 리스트  
+#### 6-3 [option]  
+[select], [optgroup], [datalist]의 항목을 삽입함.
+#### 6-4 [label]  
+UI 항목의 설명  
+#### 6-5 [input]★  
+사용자의 데이터를 받을 수 있는 대화형 컨트롤 생성  
+##### input에서 사용가능한 attribute  
+button, checkbox, color, date, email, file, image, month, password, radio, range, reset, search, submit, text 등등 굉장히 많음  
