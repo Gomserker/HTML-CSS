@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selectors part 2</title>
+    <style>
+        body{
+            height:1000vh;
+            margin:50px;
+        }
+
+        span{
+            background-color: yellowgreen;
+            padding:5px;
+            border-radius: 5px;
+            color:tomato;
+            
+        }
+
+        
+        /* <p> 안에 있는 <span>의 색을 바꾸려면? */
+        /* 부모 태그를 먼저 호출하고 자식 태그를 호출하면 된다. */
+        p span{
+            color:white;
+        }
+
+        /* 첫번째 <span>에만 margin을 주고 싶을땐? */
+        /* >를 사용하는데 반드시 코앞의 부모 관계여야만 한다. */
+        div > span{
+            text-decoration: underline;
+        }
+        /* 상하관계가 아닌 형제 관계에 있는 태그의 경우 +를 사용한다.
+        div + span */
+
+        p + span{
+            color:blue;
+            text-decoration: underline;
+        }
+
+        /* 형제 관계이나 바로 옆에 붙어있지 않을때는 ~를 사용한다. */
+        p ~ span{
+            color:aqua;
+        }
+        input {
+            border: 1px solid wheat;
+        }
+        input:required{
+            border: 1px solid tomato;
+        }
+
+        /* attribute selector */
+        input[type="password"]{
+            background-color: thistle;
+        }
+
+        /* ~= : 앞뒤에 공백이 있는 상태에서 name이 있을 경우에만
+           *= : ㅐ먄애ㅔㅑ렴name내ㅔ야려 인 경우에도 선택됨
+        */
+        input[placeholder~="name"]{
+            background-color:tomato;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span>hello</span>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. <span>inside</span> 
+        </p>
+        <address>hi</address>
+        <span>hello again</span>
+    </div><hr>
+    <form>
+        <input type="text" placeholder="First name" />
+        <input type="text" placeholder="Last name" />
+        <input type="password" required placeholder="password" />
+    </form>
+
+    
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>States</title>
+    <Style>
+        body{
+            height: 1000vh;
+            margin: 30px;
+        }
+
+        button:active{
+            background-color: tomato;
+        }
+
+        button:hover{
+            background-color: teal;
+        }
+
+        button:focus{
+            background-color: blue;
+        }
+
+        input:focus{
+            background-color: bisque;
+        }
+        a:visited{
+            color: tomato;
+        }
+        a:hover{
+            color: teal;
+        }
+
+        a:focus{
+            color:turquoise;
+        }
+
+        /* focus-within은 focus된 자식을 가진 부모 엘리먼트의 상태 */
+        form{
+            border:1px solid salmon;
+            display: flex;
+            flex-direction: column;
+            padding:20px;
+        }
+
+        form:focus-within{
+            border-color:seagreen;
+            background-color: black;
+        }
+
+        form:hover input:focus{
+            background-color: sienna;
+        }
+    </Style>
+</head>
+
+<body>
+    <div>
+        <button>Hello</button><hr>
+        <input type="text"/>
+        <input type="text"/><hr>
+
+        <a href="https://apple.com">Go to apple</a><hr>
+        <form>
+            <input type="text"/>
+            <input type="text"/>
+            <input type="text"/>
+        </form>
+    </div>
+</body>
+</html>
