@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformations</title>
+    <style>
+        img{
+            border: 5px solid black;
+            border-radius: 50%;
+            transition: transform 500ms ease-in-out;
+        }
+        img:hover{
+            transform:rotate(360deg) scale(0.5);
+        }
+
+        div{
+            border:2px solid black;
+            height: 300px;
+            width: 30px;
+            transition: width 200ms ease-out;
+        }
+
+        div:hover{
+            width: 600px;
+        }
+
+    </style>
+</head>
+<body>
+    <img src="img/web_logo.png"/>
+    <div>animation test</div>
+</body>
+</html>

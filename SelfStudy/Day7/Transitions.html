@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <title>Transitions</title>
+        <Style>
+            a {
+                color:white;
+                background-color: tomato;
+                text-decoration: none;
+                padding: 3px 5px;
+                border-radius: 5px;
+                font-size:40px;
+                /*transition: attribute latency acutalTransitionEffect */
+                transition: background-color 1000ms cubic-bezier(0.470, 0.000, 0.745, 0.715),
+                border-radius 500ms ease-in-out;
+            }
+            /* transition이라는 속성은 state가 없는쪽에 써야함 */
+            /* 단, 변화 시키려면 해당 속성이 반드시 state에 포함되어 있어야함*/
+
+            /*ease-in function 
+            matthewlein.com/tools/ceaser
+
+            */
+            a:hover{
+                color:tomato;
+                background-color: bisque;
+            }
+        </Style>
+    </head>
+    <body>
+        <a href="#">Go home</a>
+
+    </body>
+</html>
