@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 100vh;
+  background-color: whitesmoke;
+}
+/* div {
+  border: 1px solid black;
+} */
+.header-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 3px;
+  width: 100%;
+  height: 220px;
+  background-color: #ffce33;
+}
+
+.header-bar__column {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.header-bar__column span {
+  font-size: 49px;
+  font-weight: 900;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  z-index: 0;
+}
+
+.search-form div {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 3% 5%;
+  font-size: 300%;
+  margin-top: -6%;
+  border-radius: 50px;
+  border: none;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.35);
+}
+.search-form input {
+  width: 100%;
+  font-size: 100%;
+  border: none;
+  cursor: pointer;
+}
+
+.search-form i {
+  color: rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+}
+
+.search-form input:focus {
+  outline: none;
+}
+
+.bod,
+.top {
+  display: block;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+.bod span,
+.top span {
+  font-size: 70px;
+  font-weight: 700;
+}
+
+.bod__contents {
+  display: flex;
+  align-items: center;
+}
+
+.bod__contents-cover {
+  width: 280px;
+  height: 400px;
+
+  border: 1px solid black;
+  border-radius: 30px;
+  margin: 50px 30px 0 30px;
+  background-image: url(http://image.yes24.com/goods/103840688/XL);
+}
+
+.bod__contents-data {
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.bod__contents-data h4 {
+  font-size: 48px;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+.bod__contents-data h6 {
+  font-size: 48px;
+  line-height: 2;
+  font-weight: 700;
+}
+
+.bod__contents-button {
+  width: 120px;
+  height: 40px;
+  background-color: rgba(128, 128, 128, 0.253);
+  text-align: center;
+  display: inline-flex;
+  padding: 10px;
+  margin: 10px 20px 0 0;
+  border-radius: 10px;
+  font-weight: 800;
+}
+
+.bod__contents-button span {
+  text-align: center;
+}
+
+.bod__bookmark {
+  margin-top: 30px;
+  margin-left: 3px;
+  display: flex;
+}
+
+.bod__bookmark-icon {
+  width: 50px;
+  height: 50px;
+  background-color: #ffce33;
+  position: relative;
+  border-radius: 25px;
+}
+
+.bod__bookmark-icon i {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+.bod__contents-button-bookmark {
+  width: 120px;
+  height: 40px;
+  background-color: rgb(26, 4, 105);
+  text-align: center;
+  display: inline-flex;
+  padding: 10px;
+  margin: 10px 20px 0 0;
+  border-radius: 10px;
+  font-weight: 800;
+  margin-left: 95px;
+}
+.bod__bookmark span {
+  text-align: center;
+  color: white;
+}

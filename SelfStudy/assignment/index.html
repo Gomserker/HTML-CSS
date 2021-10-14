@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIEK Clone</title>
+    <link rel="icon" sizes="16x32 64x64" href="img/web_logo.png"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            $('.bxslider').bxSlider({
+                mode: 'fade',
+                speed: 1000,
+                pause: 8500,
+                auto: true,
+                autoControls: false,
+                stopAutoOnClick: false,
+                pager: false,
+                slideWidth: 1920,
+                captions: true
+            });
+        });
+      </script>
+    <style>
+        body{
+            display:flex;
+            margin:0px;
+            height: 1000vh;
+            background-color: white;
+            flex-direction: column;
+            
+        }
+
+        table{
+            /* border:1px solid black; */
+            border-spacing: 0px;
+            padding:0%;
+        }
+        tr{
+            border: 1px solid black;
+        }
+        td{
+            border: 1px solid black;
+        }
+
+        .logo-bar{
+            height: 38px;
+            width: 100%;
+            position: fixed;
+            z-index: 3;
+        }
+
+        .logo-bar__row{
+            background-color: black;
+        }
+
+        .logo-bar__logo{
+            height: 35px;
+            width: 100px;
+            background-color: black;
+            position:inherit;
+            background-image: url(img/sony_logo.gif);
+        }
+
+        .site-menu__bar{
+            height: 120px;
+            width: 100%;
+            /* border: 1px solid black; */
+            background-color: rgb(0, 0, 0, 0.5);
+            display:flex;
+            position:inherit;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .site-menu__logo{
+            margin-right: 600px;
+            height: 80px;
+            width: 195px;
+            position:inherit;
+        }
+
+        .site-menu__acutal{
+            width: 400px;
+            height: 120px;
+            margin-left: 600px;
+            color: white;
+            font-weight: 500;
+        }
+
+        .site-menu__actual tr{
+            padding: 20px;
+        }
+        .site-menu__actual td{
+            color:white;
+            padding: 10px;
+        }
+
+        .site-menu__slider{
+            position:static;
+        }
+
+        .sliderTbl{
+            height:230px;
+            width: 100%;
+            z-index: 0;
+            background-color: whitesmoke;
+        }
+
+        .hardwareTbl__text{
+            
+            width: 100%;
+            height: 120px;
+            /* border: 1px solid black; */
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            background-color: whitesmoke;
+            z-index: 1;
+            margin-top: -40px;
+            
+        }
+
+        .hardwareTbl__product{
+            display:flex;
+            width: 100%;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            background-color: whitesmoke;
+            
+        }
+        .hardwareTbl__product-one,
+        .hardwareTbl__product-two,
+        .hardwareTbl__product-three,
+        .hardwareTbl__product-four{
+            margin: 20px;
+            width: 230px;
+            height: 260px;
+            background-color: white;
+        }
+        
+        .hardwareTbl__first-row{
+            height: 110px;
+        }
+
+        .first-product{
+            background-image: url(/img/img_ps4_new.png);
+        }
+
+        .second-product{
+            background-image: url(/img/img_ps4_pro.png);
+        }
+
+        .third-product{
+            background-image: url(/img/img_psvr.png);
+        }
+
+        .fourth-product{
+            background-image: url(/img/img_psvita_new.png);
+        }
+
+        .hardwareTbl__second-row{
+            height: 40px;
+        }
+
+        .hardwareTbl__second-row img{
+            margin-left: 35%;
+            
+            
+        }
+        .hardwareTbl__third-row{
+            height: 40px;
+        }
+
+        
+
+        
+    </style>
+</head>
+<body>
+    
+    <table class="logo-bar">
+        <tr class="logo-bar__row">
+            <td>
+                <table class="logo-bar__logo" align="right">
+                    <tr>
+                        <td>
+                            
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr class="site-menu__bar">
+            <td>
+                <table class="site-menu__logo">
+                    <tr>
+                        <td>
+                            <img src="img/siek_logo.png"/>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table class="site-menu__actual">
+                    <tr>
+                        <td colspan="2"></td>
+                        <td> HOME |</td>
+                        <td> CONTACT |</td>
+                        <td> SITEMAP |</td>
+                    </tr>
+                    <tr>
+                        <td>홈 |</td>
+                        <td>회사소개 |</td>
+                        <td>비즈니스 |</td>
+                        <td>보도자료 |</td>
+                        <td>채용안내 |</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        
+    </table>
+    <table class="sliderTbl">
+        <tr>
+            <td>
+                <div >
+                    <div class="bxslider">
+                        <div><img src="img/mainbanner001.jpg"></div>
+                        <div><img src="img/mainbanner002.jpg"></div>
+                        <div><img src="img/mainbanner003.jpg"></div>
+                    </div>
+                </div>
+        
+            </td>
+        </tr>
+    </table>
+    <table class="hardwareTbl__text">
+        <tr>
+            <td class="hardwareTbl__text" style="text-align: center;">
+                <h3 style="line-height: 0.9;">HARDWARE<br>___</h3>
+            </td>    
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td class="hardwareTbl__product">
+                <table class="hardwareTbl__product-one">
+                    <tr class="hardwareTbl__first-row first-product">
+                        <td>
+                            
+                        </td>
+                    </tr>
+                    <tr class="hardwareTbl__second-row">
+                        <td>
+                            <img src="img/logo_ps4.gif"/>
+                        </td>
+                    </tr>
+                    <tr class="hardwareTbl__third-row">
+                        <td style="text-align: center; font-size: small;">
+                            게임을 위한 최고의 시스템
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                        </td>
+                    </tr>
+                </table>
+                <table class="hardwareTbl__product-two">
+                    <tr class="hardwareTbl__first-row second-product">
+                        <td>
+
+                        </td>
+                    </tr>
+                    <tr class="hardwareTbl__second-row">
+                        <td>
+                            <img src="img/logo_ps4_pro_new.gif" />
+                        </td>
+                    </tr>
+                    <tr class="hardwareTbl__third-row">
+                        <td style="text-align: center; font-size: small;">
+                            게임 플레이를 확장하는<br>더욱 강력한 성능
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                        </td>
+                    </tr>
+                </table>
+                <table class="hardwareTbl__product-three ">
+                    <tr class="hardwareTbl__first-row third-product">
+                        <td>
+
+                        </td>
+                    </tr>
+                    <tr class="hardwareTbl__second-row">
+                        <td style="align: center;">
+                            <img src="img/logo_psvr.gif"/>
+                        </td>
+                    </tr>
+                    <tr class="hardwareTbl__third-row">
+                        <td style="text-align: center; font-size: small;">
+                            모든 것을 상상하고 경험하세요
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                        </td>
+                    </tr>
+                </table>
+                <table class="hardwareTbl__product-four ">
+                    <tr class="hardwareTbl__first-row fourth-product">
+                        <td>
+
+                        </td>
+                    </tr>
+                    <tr class="hardwareTbl__second-row">
+                        <td>
+                            <img src="img/logo_psvita.gif"/>
+                        </td>
+                    </tr>
+                    <tr class="hardwareTbl__third-row">
+                        <td style="text-align: center; font-size: small;">
+                            손안에서 펼쳐지는<br>엔터테인먼트의 세계
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    </table>
+        
+    
+    
+</body>
+</html>
