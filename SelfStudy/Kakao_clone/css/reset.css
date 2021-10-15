@@ -127,9 +127,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-div {
+/* div {
   border: 1px solid black;
-}
+} */
 input:focus {
   outline: none;
 }
