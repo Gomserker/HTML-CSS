@@ -12,6 +12,9 @@ body {
   background-color: lightgray;
 }
 
+main {
+  align-items: center;
+}
 .page-one,
 .page-two {
   width: 300px;
@@ -23,9 +26,11 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  height: 640px;
 }
 
-.page-one__header {
+.page-one__header,
+.page-two__header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -35,11 +40,15 @@ body {
   margin-bottom: 10px;
 }
 
-.page-one__main {
+.page-one__main,
+.page-two__main {
   width: 90%;
 }
 
-.main__singer-info {
+.main__singer-info,
+.main__playscreen,
+.main__playtime,
+.slider {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -48,6 +57,37 @@ body {
   margin-bottom: 20px;
 }
 
+.main__playtime {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  padding: 0px 10px;
+}
+
+.main__playtime span {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.playscreen__albumart {
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-top: 40px;
+  border-radius: 20px;
+  box-shadow: 4px 4px 10px 3px rgba(0, 0, 0, 0.4);
+}
+
+.playscreen__albumart img {
+  position: absolute;
+  top: 0px;
+}
 .main__singer-photo {
   overflow: hidden;
   width: 100px;
@@ -66,13 +106,25 @@ body {
   width: 150px;
 }
 
-.main__singer-name {
+.main__singer-name,
+.playscreen_title {
   font-size: 20px;
   margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.main__playscreen > .playscreen_title {
+  margin-bottom: 30px;
+  font-size: 30px;
 }
 
 .main__singer-genre {
   font-size: 15px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.playscreen_artist {
+  font-size: 17px;
   color: rgba(0, 0, 0, 0.7);
 }
 
@@ -112,16 +164,12 @@ body {
 }
 
 .main__playlist-info {
-  width: 90%;
+  width: 100%;
   height: 60px;
   display: flex;
   align-items: center;
   border-radius: 15px;
   margin-bottom: 10px;
-}
-
-.main__playlist-info i {
-  margin-left: 20px;
 }
 
 .playlist-info__cover {
@@ -155,7 +203,8 @@ body {
   font-size: 15px;
 }
 
-.main__control {
+.main__control,
+.main__playcontrol {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -164,6 +213,39 @@ body {
   border-radius: 30px;
   background-color: black;
   margin-bottom: 20px;
+}
+
+.main__playcontrol {
+  width: 90%;
+  background-color: whitesmoke;
+  border-radius: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.playcontrol__btn {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.playcontrol__btn i:nth-child(1),
+:nth-child(5) {
+  color: gray;
+}
+
+.btn__play {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5px;
+  color: white;
 }
 
 .control__now-playing {
@@ -191,4 +273,31 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.main__slider,
+.slider__play {
+  width: 100%;
+  height: 5px;
+  border-radius: 60px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.slider__play {
+  width: 60%;
+  background-color: black;
+}
+
+.slider__circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: black;
+  margin-left: 94%;
+}
+
+.highlited {
+  box-shadow: 0px 1px 5px 0.5px rgba(0, 0, 0, 0.2);
 }
