@@ -100,3 +100,25 @@
 .open-post__like-count span {
   margin-left: 8px;
 }
+
+@keyframes likeBeat {
+  0% {
+    color: white;
+    transform: none;
+  }
+
+  50% {
+    color: rgb(48, 48, 182);
+    transform: scale(1.5);
+  }
+
+  100% {
+    color: white;
+    transform: none;
+  }
+}
+
+.open-post__like-count:hover i {
+  will-change: transform;
+  animation: likeBeat 1000ms linear infinite;
+}
