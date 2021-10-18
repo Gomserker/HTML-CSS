@@ -48,10 +48,22 @@
   margin-bottom: 30px;
 }
 
+@keyframes fadeInFromLeft {
+  from {
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
 .message-row {
   width: 100%;
   display: flex;
   margin-bottom: 30px;
+  animation: fadeInFromLeft 500ms linear;
 }
 
 .message-row img {
@@ -89,8 +101,20 @@
   font-size: 15px;
 }
 
+@keyframes fadeInFromRight {
+  from {
+    transform: translateX(10px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
 .message-row--own {
   justify-content: flex-end;
+  animation: fadeInFromRight 500ms linear;
 }
 
 .message-row--own .message__bubble {
